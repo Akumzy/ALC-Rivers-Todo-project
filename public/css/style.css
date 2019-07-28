@@ -1,10 +1,3 @@
-@font-face {
-  font-family: GothamRoundedMedium;
-  src: url("/css/font/GothamRounded-Medium.otf") format("opentype");
-  font-style: normal;
-  font-weight: normal;
-}
-
 html,
 body {
   width: 100%;
@@ -94,7 +87,6 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  font-size: 11px;
 }
 
 #app > main {
@@ -168,13 +160,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 22px;
-  color: #dbd9cb;
   cursor: pointer;
 }
 
 @media screen and (max-width: 640px) {
   #app > main .list-actions .action-btn {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -236,7 +227,15 @@ body {
           transform: scale(0.5);
 }
 
-.font-GothamRoundedMedium {
-  font-family: GothamRoundedMedium;
+.monta {
+  position: absolute;
+  bottom: 2px;
+  color: #747981;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.monta span {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
