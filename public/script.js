@@ -20,12 +20,11 @@ const template = ({ text = '', done = false, editMode = true, id } = {}) => ({
             // so we're just go update our database directly
             // without rerendering the DOM elements
             saveToDB(storage)
-
           },
           blur: function(_, obj) {
             this.setAttribute('contenteditable', false)
             obj.editMode = false
-            saveToDB(storage)
+            !obj.text.trim() ? delete storage[obj.id] : saveToDB(storage)
           },
           dblclick: function(_, obj) {
             if (!obj.editMode) {
