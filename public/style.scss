@@ -123,6 +123,7 @@ body {
     display: flex;
     justify-content: center;
     #add-btn {
+      z-index: 1;
       width: 80px;
       height: 80px;
       background-color: $green;
@@ -147,6 +148,7 @@ body {
   color: $text-color;
   text-decoration: none;
   font-weight: bold;
+  z-index: 0;
   span{
     text-decoration: underline;
   }
